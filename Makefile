@@ -1,7 +1,7 @@
 NAME = push_swap
 SRC_DIR = ./src
-SRC = src/checker.c src/execute_command.c src/free_stack.c src/get_ops.c src/insertion_sort.c src/misc.c src/push_swap.c src/raise_error.c src/read_stack.c
-SRC_ps = src/execute_command.c src/free_stack.c src/get_ops.c src/insertion_sort.c src/misc.c src/push_swap.c src/raise_error.c src/read_stack.c
+SRC = src/checker.c src/execute_command.c src/free_stack.c src/get_ops.c src/insertion_sort.c src/misc.c src/push_swap.c src/raise_error.c src/read_stack.c src/sort_stack.c
+SRC_ps = src/execute_command.c src/free_stack.c src/get_ops.c src/insertion_sort.c src/misc.c src/push_swap.c src/raise_error.c src/read_stack.c src/sort_stack.c
 SRC_ch = src/checker.c src/execute_command.c src/free_stack.c src/get_ops.c src/insertion_sort.c src/misc.c src/raise_error.c src/read_stack.c
 
 OBJ_DIR = ./objs

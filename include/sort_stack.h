@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   sort_stack.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleann <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,28 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sort_stack.h"
-#include "read_stack.h"
-#include "raise_error.h"
-#include "ft_list.h"
-#include "free_stack.h"
+#ifndef SORT_STACK_H
+# define SORT_STACK_H
 
-int		main(int argc, char **argv)
-{
-	t_list	*st_a;
-	t_list	*st_b;
+# include "ft_list.h"
 
-	st_a = ft_lstinit();
-	st_b = ft_lstinit();
-	if (argc > 1)
-	{
-		if (read_stack(st_a, argc, argv) != 0)
-			raise_error();
-		sort_stack(st_a, st_b);
-		free_stack(st_a);
-		free_stack(st_b);
-	}
-	else
-		raise_error();
-	return (0);
-}
+void	sort_stack(t_list *st_a, t_list *st_b);
+
+#endif
